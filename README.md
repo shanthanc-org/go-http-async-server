@@ -31,17 +31,28 @@ See [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md) for a detailed explanation of
 
 ## Getting Started
 
+**New to this project? Start here:** 👉 [QUICK_START.md](./QUICK_START.md)
+
+The quick start guide will walk you through:
+1. Initializing your Go module
+2. Creating your first HTTP server
+3. Adding handlers and middleware
+4. Building incrementally
+
+### Learning Path
+
 1. **Initialize Go module**:
    ```bash
    go mod init github.com/shanthanc-org/go-http-async-server
    ```
 
 2. **Start with the basics**:
-   - Create `cmd/server/main.go` with a simple HTTP server
+   - Follow [QUICK_START.md](./QUICK_START.md) to create your first server
    - Implement a basic handler in `internal/handler/`
    - Run your server and test it
 
 3. **Add concurrency**:
+   - Read [docs/CONCURRENCY_PATTERNS.md](./docs/CONCURRENCY_PATTERNS.md)
    - Implement a worker pool in `internal/worker/`
    - Connect handlers to workers using channels
    - Test concurrent request processing
@@ -54,12 +65,14 @@ See [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md) for a detailed explanation of
    - Keep notes in `docs/` about patterns you implement
    - Write tests as you build
 
-## Learning Resources
+## Documentation
 
-Each directory has a README.md explaining its purpose and what should go there. Start with:
-- `cmd/server/README.md` - Entry point guidance
-- `internal/worker/README.md` - Concurrency patterns
-- `PROJECT_STRUCTURE.md` - Overall project guide
+- **[QUICK_START.md](./QUICK_START.md)** - Get started in 5 steps!
+- **[PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md)** - Detailed folder structure guide
+- **[docs/CONCURRENCY_PATTERNS.md](./docs/CONCURRENCY_PATTERNS.md)** - Concurrency patterns to implement
+- **[docs/EXAMPLE_FILES.md](./docs/EXAMPLE_FILES.md)** - Example file organization
+
+Each directory has a README.md explaining its purpose and what should go there.
 
 ## Key Concepts
 
